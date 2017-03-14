@@ -11,10 +11,8 @@ import java.util.List;
  */
 public interface ProductService {
     //public Product findProductByProductName(String productname);
-    public List<Product> findProductsByUser(User user);
     public void saveProduct(Product product,User user);
+    public Product findProductById(Long id);
     public Iterable<Product> findAllProducts();
-
-
-
+    public List<Product> findProductsByUser(User user);
 }

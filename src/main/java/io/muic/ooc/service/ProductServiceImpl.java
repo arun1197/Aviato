@@ -30,8 +30,14 @@ public class ProductServiceImpl implements ProductService{
         return products;
     }
 
+    @Override
     public Iterable<Product> findAllProducts() {
        Iterable<Product> allProducts = productRepository.findAll();
        return allProducts;
+    }
+
+    @Override
+    public Product findProductById(Long id){
+        return productRepository.findOne(id);
     }
 }

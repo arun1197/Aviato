@@ -28,8 +28,9 @@
                     <td th:text="${product.getPrice()}"></td>
                     <td th:text="${product.getQuantity()}"></td>
                     <td th:text="${product.getDescription()}"></td>
-                    <td><form th:object="${product}" th:action="@{/seller/edit_product}" method="get">
-                        <button class="btn btn-md btn-primary btn-block" name="edit"
+                    <td><form th:action="@{/seller/edit_product}" method="get">
+                        <input type="hidden" th:value="${product.getId()}" name="id"/>
+                        <button class="btn btn-md btn-success btn-block" name="Edit"
                                 type="Submit">Edit</button>
                         </form>
                     </td>

@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import io.muic.ooc.model.User;
 
 @Repository("userRepository")
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Integer> {
 	 User findByUsername(String username);
 }

@@ -12,9 +12,6 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
 
 
-/**
- * Created by joakimnilfjord on 3/11/2017 AD.
- */
 @Controller
 public class RegistrationController {
     @Autowired
